@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MatriPoshan — Nourishing Mothers, Nurturing Futures</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="../Images/Logo/logo.png" type="image/png">
+    <link rel="icon" href="img/logo.png" type="image/png">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">
-                <img src="../Images/Logo/logo.png" alt="MatriPoshan Logo">
+                <img src="img/logo.png" alt="MatriPoshan Logo">
                 <span>MatriPoshan</span>
             </a>
             <ul class="nav-links" id="navLinks">
@@ -25,6 +25,7 @@
                 <li><a href="#problem">The Problem</a></li>
                 <li><a href="#solution">Solution</a></li>
                 <li><a href="#products">Products</a></li>
+                <li><a href="#stories">Stories</a></li>
                 <li><a href="#impact">Impact</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -37,37 +38,59 @@
 
     <!-- ===== HERO SECTION ===== -->
     <section class="hero" id="hero">
-        <!-- Decorative leaves -->
-        <div class="leaf leaf-1"></div>
-        <div class="leaf leaf-2"></div>
-        <div class="dots-pattern dots-hero-1"></div>
-        <div class="dots-pattern dots-hero-2"></div>
+        <div class="hero-bg-gradient"></div>
 
         <div class="hero-container">
             <div class="hero-text">
-                <div class="hero-logo-badge">
-                    <img src="../Images/Logo/logo.png" alt="MatriPoshan">
+                <div class="hero-tag">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    <span>Hult Prize 2026</span>
                 </div>
-                <h1 class="hero-title">MATRIPOSHAN</h1>
+                <h1 class="hero-title">MATRI<span class="title-accent">POSHAN</span></h1>
                 <p class="hero-subtitle">Nourishing mothers, nurturing futures</p>
+                <p class="hero-desc">An integrated maternal nutrition kit fighting anemia in pregnancy — because every mother deserves strength, not survival.</p>
                 <div class="hero-cta">
-                    <a href="#solution" class="btn btn-primary">Explore Our Kits</a>
+                    <a href="#solution" class="btn btn-primary">Explore Our Kits <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align:middle;margin-left:6px"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     <a href="#problem" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat-item">
+                        <strong>40%+</strong>
+                        <span>Women with anemia</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat-item">
+                        <strong>2-3</strong>
+                        <span>Kits per pregnancy</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat-item">
+                        <strong>NPR 999</strong>
+                        <span>Starting price</span>
+                    </div>
                 </div>
             </div>
             <div class="hero-images">
-                <div class="hero-circle hero-circle-large">
-                    <img src="../Images/Matriposhan images for the website/people in slide/une mère et son bébé, Kirtipur, Népal (Philippe Guy).jpg" alt="Mother and baby Nepal">
+                <div class="hero-image-main">
+                    <img src="img/hero-mother-nepal.jpg" alt="Mother and baby Nepal">
+                    <div class="hero-image-ring"></div>
                 </div>
-                <div class="hero-circle hero-circle-small">
-                    <img src="../Images/Matriposhan images for the website/people in slide/Akha woman & baby.jpg" alt="Akha woman and baby">
+                <div class="hero-image-secondary">
+                    <img src="img/hero-akha-woman.jpg" alt="Akha woman and baby">
                 </div>
-                <div class="pink-arc"></div>
+                <div class="hero-float-card">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    <span>Saving lives daily</span>
+                </div>
             </div>
         </div>
 
         <div class="hero-banner">
-            <p>Pregnancy is meant to be a time of hope, strength and care</p>
+            <div class="hero-banner-inner">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="2" style="flex-shrink:0"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <p>Pregnancy is meant to be a time of hope, strength and care</p>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="2" style="flex-shrink:0"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
         </div>
     </section>
 
@@ -88,10 +111,10 @@
                 </div>
                 <div class="stat-images">
                     <div class="stat-img">
-                        <img src="../Images/Matriposhan images for the website/people in slide/pin1.jpg" alt="Mother with child">
+                        <img src="img/pin1.jpg" alt="Mother with child">
                     </div>
                     <div class="stat-img">
-                        <img src="../Images/Matriposhan images for the website/people in slide/pin2.jpg" alt="Mother carrying baby">
+                        <img src="img/pin2.jpg" alt="Mother carrying baby">
                     </div>
                 </div>
             </div>
@@ -144,7 +167,7 @@
                 <div class="three-dots dark">
                     <span></span><span></span><span></span>
                 </div>
-                <img src="../Images/Matriposhan images for the website/people in slide/123.jpg" alt="Healthcare visit">
+                <img src="img/visit-healthcare.jpg" alt="Healthcare visit">
             </div>
             <div class="visit-content">
                 <h2>Our visit</h2>
@@ -157,7 +180,7 @@
                 </div>
             </div>
             <div class="visit-image-small">
-                <img src="../Images/Matriposhan images for the website/people in slide/this image.jpg" alt="Ground reality">
+                <img src="img/visit-ground-reality.jpg" alt="Ground reality">
             </div>
         </div>
         <div class="three-dots pink visit-dots-bottom">
@@ -178,7 +201,7 @@
                 <p>Matriposhan combines iron-rich local foods, essential supplements, and simple nutrition education — all in one single package that addresses anemia at its root.</p>
             </div>
             <div class="solution-kit-image">
-                <img src="../Images/Matriposhan images for the website/people in slide/1.jpg" alt="MatriPoshan Kit" onerror="this.style.display='none'">
+                <img src="img/solution-mother.jpg" alt="Mother and child - MatriPoshan">
             </div>
         </div>
 
@@ -187,17 +210,48 @@
             <h2 class="section-heading">Key Components<br>of the kit</h2>
             <div class="components-grid">
                 <div class="component-card">
-                    <div class="component-icon">&#127823;</div>
+                    <div class="component-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="22" fill="#FFF0F1" stroke="#C62828" stroke-width="1.5"/>
+                            <path d="M16 28c0-4 3-7 8-7s8 3 8 7" stroke="#C62828" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="20" cy="18" r="3" fill="#E53935"/>
+                            <circle cx="28" cy="18" r="2.5" fill="#C62828"/>
+                            <circle cx="24" cy="21" r="2" fill="#FF8A80"/>
+                            <path d="M14 32h20" stroke="#C62828" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M18 32v3M24 32v4M30 32v3" stroke="#C62828" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <h4>Iron-Rich Foods</h4>
                     <p>Chickpeas, Soya chunks, dried fruits (raisins, cashews, walnuts, dates)</p>
                 </div>
                 <div class="component-card">
-                    <div class="component-icon">&#128138;</div>
+                    <div class="component-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="22" fill="#FFF0F1" stroke="#C62828" stroke-width="1.5"/>
+                            <rect x="20" y="10" width="8" height="16" rx="4" fill="#E53935"/>
+                            <rect x="22" y="12" width="4" height="5" rx="2" fill="#FF8A80"/>
+                            <path d="M20 26h8v4a4 4 0 01-8 0v-4z" fill="#C62828"/>
+                            <line x1="24" y1="34" x2="24" y2="38" stroke="#C62828" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="15" cy="20" r="3" fill="#FF8A80" opacity="0.6"/>
+                            <circle cx="33" cy="20" r="3" fill="#FF8A80" opacity="0.6"/>
+                        </svg>
+                    </div>
                     <h4>Essential Supplements</h4>
                     <p>Folic acid, iron tablets, deworming tablets</p>
                 </div>
                 <div class="component-card">
-                    <div class="component-icon">&#128214;</div>
+                    <div class="component-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="22" fill="#FFF0F1" stroke="#C62828" stroke-width="1.5"/>
+                            <rect x="14" y="12" width="20" height="26" rx="2" fill="white" stroke="#C62828" stroke-width="1.5"/>
+                            <line x1="18" y1="18" x2="30" y2="18" stroke="#E53935" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="18" y1="22" x2="28" y2="22" stroke="#FF8A80" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="18" y1="26" x2="30" y2="26" stroke="#E53935" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="18" y1="30" x2="26" y2="30" stroke="#FF8A80" stroke-width="1.5" stroke-linecap="round"/>
+                            <circle cx="32" cy="32" r="7" fill="#C62828"/>
+                            <path d="M29 32l2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <h4>Nutrition Education</h4>
                     <p>Comprehensive brochure with meal planning guidance</p>
                 </div>
@@ -210,22 +264,62 @@
             <div class="dots-pattern dots-nutrition"></div>
             <div class="nutrition-grid">
                 <div class="nutrition-card">
-                    <div class="nutrition-icon">🥣</div>
+                    <div class="nutrition-icon">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                            <circle cx="22" cy="22" r="20" fill="white" opacity="0.5"/>
+                            <ellipse cx="22" cy="26" rx="10" ry="7" fill="#C62828" opacity="0.15"/>
+                            <path d="M14 22c0-5 3.6-9 8-9s8 4 8 9" stroke="#C62828" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 22h20v2a10 10 0 01-20 0v-2z" fill="#C62828" opacity="0.2" stroke="#C62828" stroke-width="1.5"/>
+                            <circle cx="18" cy="26" r="2" fill="#E53935"/>
+                            <circle cx="26" cy="25" r="1.5" fill="#E53935"/>
+                            <circle cx="22" cy="28" r="1.8" fill="#C62828"/>
+                        </svg>
+                    </div>
                     <h4>Plant Protein Power</h4>
                     <p>Soya chunks and sattu provide complete proteins and enhance iron absorption</p>
                 </div>
                 <div class="nutrition-card">
-                    <div class="nutrition-icon">🍇</div>
+                    <div class="nutrition-icon">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                            <circle cx="22" cy="22" r="20" fill="white" opacity="0.5"/>
+                            <circle cx="18" cy="20" r="4" fill="#9B1B1B"/>
+                            <circle cx="26" cy="18" r="3.5" fill="#C62828"/>
+                            <circle cx="22" cy="26" r="4.5" fill="#E53935"/>
+                            <circle cx="28" cy="25" r="3" fill="#9B1B1B" opacity="0.7"/>
+                            <circle cx="15" cy="27" r="2.5" fill="#C62828" opacity="0.6"/>
+                            <path d="M22 10v3M22 8l1 2h-2l1-2z" stroke="#4CAF50" stroke-width="1.5" fill="#4CAF50"/>
+                            <path d="M20 9c-2-1-4 0-5 1" stroke="#4CAF50" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <h4>Natural Iron Sources</h4>
                     <p>Dried fruits, dates, and cashews offer bioavailable iron with essential minerals</p>
                 </div>
                 <div class="nutrition-card">
-                    <div class="nutrition-icon">🍊</div>
+                    <div class="nutrition-icon">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                            <circle cx="22" cy="22" r="20" fill="white" opacity="0.5"/>
+                            <circle cx="22" cy="24" r="9" fill="#FF6D00" opacity="0.2"/>
+                            <circle cx="22" cy="24" r="9" stroke="#FF6D00" stroke-width="1.5" fill="none"/>
+                            <path d="M22 15c2 3 4 5 4 9a4 4 0 01-8 0c0-4 2-6 4-9z" fill="#FF6D00" opacity="0.4"/>
+                            <path d="M19 20c0 0 2-1 3 1s3 1 3-1" stroke="#FF6D00" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M26 15l3-3M26 15l3 1M18 15l-3-3M18 15l-3 1" stroke="#FFB300" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <h4>Vitamin C Boosters</h4>
                     <p>Amla powder and moringa powder increase iron absorption significantly</p>
                 </div>
                 <div class="nutrition-card">
-                    <div class="nutrition-icon">🥛</div>
+                    <div class="nutrition-icon">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                            <circle cx="22" cy="22" r="20" fill="white" opacity="0.5"/>
+                            <rect x="15" y="14" width="14" height="20" rx="3" fill="none" stroke="#C62828" stroke-width="1.5"/>
+                            <path d="M15 18h14" stroke="#C62828" stroke-width="1.5"/>
+                            <rect x="17" y="14" width="10" height="4" rx="1" fill="#E53935" opacity="0.3"/>
+                            <path d="M19 24h6M19 28h4" stroke="#E53935" stroke-width="1.5" stroke-linecap="round"/>
+                            <circle cx="32" cy="30" r="5" fill="#4CAF50" opacity="0.2" stroke="#4CAF50" stroke-width="1.5"/>
+                            <path d="M30 30h4M32 28v4" stroke="#4CAF50" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <h4>Essential Minerals</h4>
                     <p>Iodized salt and ORS packets maintain electrolyte balance and thyroid health</p>
                 </div>
@@ -238,7 +332,7 @@
                 <div class="three-dots dark">
                     <span></span><span></span><span></span>
                 </div>
-                <img src="../Images/Matriposhan images for the website/people in slide/stop the tibetan people genocide.jpg" alt="Mother and child">
+                <img src="img/mother-child-why.jpg" alt="Mother and child">
             </div>
             <div class="why-works-content">
                 <h2>Why<br>MatriPoshan<br><em>Works</em></h2>
@@ -434,6 +528,132 @@
         </div>
     </section>
 
+    <!-- ===== REAL STORIES ===== -->
+    <section class="stories" id="stories">
+        <div class="leaf leaf-11"></div>
+        <h2 class="section-heading">Real Stories</h2>
+        <p class="section-subtext">Documented individuals in Nepal — the women behind the statistics</p>
+
+        <div class="stories-slider">
+            <div class="stories-track" id="storiesTrack">
+                <!-- Story 1 -->
+                <div class="story-card" data-story="1">
+                    <div class="story-badge">Story 01</div>
+                    <div class="story-inner">
+                        <div class="story-header">
+                            <div class="story-avatar">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="23" fill="#FFF0F1" stroke="#C62828" stroke-width="1.5"/><circle cx="24" cy="18" r="7" fill="#E53935" opacity="0.3"/><path d="M12 38c0-7 5-12 12-12s12 5 12 12" fill="#C62828" opacity="0.2"/></svg>
+                            </div>
+                            <div>
+                                <h3>Parvati</h3>
+                                <span class="story-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Kailali, Nepal</span>
+                            </div>
+                        </div>
+                        <div class="story-label">Bleeding after a home birth, then an anaemia diagnosis</div>
+                        <div class="story-body">
+                            <div class="story-block">
+                                <h5><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C62828" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg> What happened</h5>
+                                <p>Parvati (30) had already faced devastating loss — a baby who died at 3 months, then a miscarriage. In a later pregnancy she became very weak, delivered at home, and kept bleeding until she fainted. A health worker urged urgent hospital care; she regained consciousness three days later and learned she had survived postpartum haemorrhage with vitamin A deficiency and anaemia.</p>
+                            </div>
+                            <div class="story-block">
+                                <h5><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C62828" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Why it mattered</h5>
+                                <p>This is the brutal anaemia-bleeding loop: when you start pregnancy with low iron, even "normal" blood loss can become dangerous.</p>
+                            </div>
+                            <div class="story-block positive">
+                                <h5><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> What changed</h5>
+                                <p>She joined a mothers' group and learned safe-motherhood practices. In her next pregnancy, she improved her diet (vegetables, fruits, beans), took iron tablets, did checkups, and delivered in a hospital with a healthy baby.</p>
+                            </div>
+                        </div>
+                        <div class="story-matriposhan">
+                            <img src="img/logo.png" alt="" width="24" height="24">
+                            <p><strong>Where Matriposhan fits:</strong> Matriposhan prevents the "weak → home birth → heavy bleeding → collapse" pathway by bundling iron-rich foods + supplements + simple family-shared guidance before the crisis point.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story 2 -->
+                <div class="story-card" data-story="2">
+                    <div class="story-badge">Story 02</div>
+                    <div class="story-inner">
+                        <div class="story-header">
+                            <div class="story-avatar">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="23" fill="#FFF0F1" stroke="#C62828" stroke-width="1.5"/><circle cx="24" cy="18" r="7" fill="#E53935" opacity="0.3"/><path d="M12 38c0-7 5-12 12-12s12 5 12 12" fill="#C62828" opacity="0.2"/></svg>
+                            </div>
+                            <div>
+                                <h3>Elina Gauchan</h3>
+                                <span class="story-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Kathmandu, Nepal</span>
+                            </div>
+                        </div>
+                        <div class="story-label">Teenage pregnancy, dizziness/blackouts, transfusion after delivery</div>
+                        <div class="story-body">
+                            <div class="story-block">
+                                <h5><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C62828" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg> What happened</h5>
+                                <p>Elina (18) came from Okhaldhunga to Kathmandu for work and became pregnant soon after marriage. She didn't recognise anaemia early and had limited prenatal checkups. During pregnancy she experienced dizziness and blackouts; she reached a hospital only around her sixth month. At delivery, she was diagnosed as anaemic, had continued bleeding, and received a blood transfusion. Weeks later she was still anaemic, taking iron-folic acid and trying to eat more greens.</p>
+                            </div>
+                            <div class="story-block">
+                                <h5><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C62828" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Why it mattered</h5>
+                                <p>Her story highlights three common failure points: <em>Low awareness</em> ("I didn't know what this was"), <em>Late detection</em>, and <em>Food reality</em> — eating whatever is in the kitchen, heavy workload, and low control over diet.</p>
+                            </div>
+                        </div>
+                        <div class="story-matriposhan">
+                            <img src="img/logo.png" alt="" width="24" height="24">
+                            <p><strong>Where Matriposhan fits:</strong> Matriposhan acts earlier than a hospital-only solution — building daily habits (food + supplement adherence) so anaemia doesn't wait until delivery to be discovered.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story 3 -->
+                <div class="story-card" data-story="3">
+                    <div class="story-badge">Story 03</div>
+                    <div class="story-inner">
+                        <div class="story-header">
+                            <div class="story-avatar">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="23" fill="#FFF0F1" stroke="#C62828" stroke-width="1.5"/><circle cx="24" cy="18" r="7" fill="#E53935" opacity="0.3"/><path d="M12 38c0-7 5-12 12-12s12 5 12 12" fill="#C62828" opacity="0.2"/></svg>
+                            </div>
+                            <div>
+                                <h3>Nanda Keshari Maharjan</h3>
+                                <span class="story-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Khokana, Lalitpur, Nepal</span>
+                            </div>
+                        </div>
+                        <div class="story-label">Severe anaemia improved when it was caught early</div>
+                        <div class="story-body">
+                            <div class="story-block">
+                                <h5><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C62828" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg> What happened</h5>
+                                <p>Nanda Keshari had severe anaemia in both pregnancies. In her first pregnancy she felt weak and lifeless and didn't know what to do. In her second pregnancy, anaemia was identified during an initial prenatal visit, and she received iron tablets plus diet advice — and she did not have the same weakness and fatigue.</p>
+                            </div>
+                            <div class="story-block positive">
+                                <h5><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Why it mattered</h5>
+                                <p>Same woman, different outcome — because of early contact + practical guidance. This is proof that early intervention works.</p>
+                            </div>
+                        </div>
+                        <div class="story-matriposhan">
+                            <img src="img/logo.png" alt="" width="24" height="24">
+                            <p><strong>Where Matriposhan fits:</strong> Matriposhan makes "early + practical" support the default, not the lucky exception — especially where first-time mothers don't know what symptoms mean.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="stories-controls">
+                <button class="story-btn story-prev" id="storyPrev" aria-label="Previous story">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                </button>
+                <div class="stories-dots" id="storiesDots">
+                    <button class="story-dot active" data-index="0"></button>
+                    <button class="story-dot" data-index="1"></button>
+                    <button class="story-dot" data-index="2"></button>
+                </div>
+                <button class="story-btn story-next" id="storyNext" aria-label="Next story">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+            </div>
+            <div class="stories-counter">
+                <span id="storyCurrentNum">1</span> / <span>3</span>
+            </div>
+        </div>
+    </section>
+
     <!-- ===== IMPACT ===== -->
     <section class="impact" id="impact">
         <div class="leaf leaf-9"></div>
@@ -485,28 +705,28 @@
         <div class="team-grid">
             <div class="team-card">
                 <div class="team-photo">
-                    <img src="../Images/Matriposhan images for the website/team members/iqra_member.jpg" alt="Iqra Idrishi">
+                    <img src="img/team-iqra.jpg" alt="Iqra Idrishi">
                 </div>
                 <h4>Iqra Idrishi</h4>
                 <p class="team-role">Executive Officer</p>
             </div>
             <div class="team-card">
                 <div class="team-photo">
-                    <img src="../Images/Matriposhan images for the website/team members/ashlesa_member.jpg" alt="Ashlesa Amatya">
+                    <img src="img/team-ashlesa.jpg" alt="Ashlesa Amatya">
                 </div>
                 <h4>Ashlesa Amatya</h4>
                 <p class="team-role">Technology Officer</p>
             </div>
             <div class="team-card">
                 <div class="team-photo">
-                    <img src="../Images/Matriposhan images for the website/team members/abheet_member.jpg" alt="Abheet Budhathoki">
+                    <img src="img/team-abheet.jpg" alt="Abheet Budhathoki">
                 </div>
                 <h4>Abheet Budhathoki</h4>
                 <p class="team-role">Finance Officer</p>
             </div>
             <div class="team-card">
                 <div class="team-photo">
-                    <img src="../Images/Matriposhan images for the website/team members/jasmine_member.jpg" alt="Jasmine Neupane">
+                    <img src="img/team-jasmine.jpg" alt="Jasmine Neupane">
                 </div>
                 <h4>Jasmine Neupane</h4>
                 <p class="team-role">Operational Officer</p>
@@ -554,7 +774,7 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="../Images/Logo/logo.png" alt="MatriPoshan">
+                <img src="img/logo.png" alt="MatriPoshan">
                 <span>MatriPoshan</span>
             </div>
             <div class="footer-links">
@@ -562,6 +782,7 @@
                 <a href="#problem">Problem</a>
                 <a href="#solution">Solution</a>
                 <a href="#products">Products</a>
+                <a href="#stories">Stories</a>
                 <a href="#impact">Impact</a>
                 <a href="#team">Team</a>
             </div>

@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '.nutrition-section, .why-works, .pricing-card, .business-model, ' +
         '.timeline-item, .pillar-card, .capital-allocation, ' +
         '.scale-step, .impact-card, .sdg-section, .closing-statement, ' +
-        '.team-card, .contact-container'
+        '.team-card, .contact-container, .stories-slider'
     );
 
     revealElements.forEach(el => el.classList.add('reveal'));
@@ -191,6 +191,85 @@ document.addEventListener('DOMContentLoaded', () => {
                 contactForm.reset();
             }, 3000);
         });
+    }
+
+    // ===== STORIES SLIDER =====
+    const storiesTrack = document.getElementById('storiesTrack');
+    const storyPrev = document.getElementById('storyPrev');
+    const storyNext = document.getElementById('storyNext');
+    const storyDots = document.querySelectorAll('.story-dot');
+    const storyCurrentNum = document.getElementById('storyCurrentNum');
+    let currentStory = 0;
+    const totalStories = 3;
+
+    function goToStory(index) {
+        if (index < 0) index = 0;
+        if (index >= totalStories) index = totalStories - 1;
+        currentStory = index;
+
+        if (storiesTrack) {
+            storiesTrack.style.transform = `translateX(-${currentStory * 100}%)`;
+        }
+
+        // Update dots
+        storyDots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentStory);
+        });
+
+        // Update counter
+        if (storyCurrentNum) {
+            storyCurrentNum.textContent = currentStory + 1;
+        }
+
+        // Update button states
+        if (storyPrev) storyPrev.disabled = currentStory === 0;
+        if (storyNext) storyNext.disabled = currentStory === totalStories - 1;
+    }
+
+    if (storyPrev) {
+        storyPrev.addEventListener('click', () => goToStory(currentStory - 1));
+    }
+    if (storyNext) {
+        storyNext.addEventListener('click', () => goToStory(currentStory + 1));
+    }
+
+    storyDots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            const idx = parseInt(dot.getAttribute('data-index'));
+            goToStory(idx);
+        });
+    });
+
+    // Initialize story slider state
+    goToStory(0);
+
+    // Keyboard navigation for stories
+    document.addEventListener('keydown', (e) => {
+        const storiesSection = document.getElementById('stories');
+        if (!storiesSection) return;
+        const rect = storiesSection.getBoundingClientRect();
+        const inView = rect.top < window.innerHeight && rect.bottom > 0;
+        if (inView) {
+            if (e.key === 'ArrowLeft') goToStory(currentStory - 1);
+            if (e.key === 'ArrowRight') goToStory(currentStory + 1);
+        }
+    });
+
+    // Swipe support for stories on mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    if (storiesTrack) {
+        storiesTrack.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        storiesTrack.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            const diff = touchStartX - touchEndX;
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) goToStory(currentStory + 1);
+                else goToStory(currentStory - 1);
+            }
+        }, { passive: true });
     }
 
     // ===== PARALLAX SUBTLE on hero =====
