@@ -1168,7 +1168,8 @@ ul { list-style: none; }
 }
 
 .bm-icon {
-    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
     margin-bottom: 1rem;
 }
 
@@ -1283,7 +1284,8 @@ ul { list-style: none; }
 }
 
 .pillar-icon {
-    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
     margin-bottom: 1rem;
 }
 
